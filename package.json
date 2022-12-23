@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/vue3-apexchart-drill/",
     "preview": "vite preview"
   },
   "dependencies": {
