@@ -1,23 +1,5 @@
 <template>
 
-  <!-- <div>
-    <-- dataPointSelection emit is used to detect clicks on a pie slice to adjust the drill state ->
-    <apexchart
-      width="400"
-      type="pie"
-      :options="chartOptions"
-      :series="chartSeries"
-      @dataPointSelection="chartDrill"
-    ></apexchart>
-
-    <button
-      @click="chartDrill(null, null, { dataPointIndex: -1 })"
-      v-if="drill !== -1"
-    >
-      Back
-    </button>
-  </div> -->
-
 <div style="width: 500px">
   
     <BarChart/>
