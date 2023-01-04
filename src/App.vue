@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <!-- dataPointSelection emit is used to detect clicks on a pie slice to adjust the drill state -->
+
+  <!-- <div>
+    <-- dataPointSelection emit is used to detect clicks on a pie slice to adjust the drill state ->
     <apexchart
       width="400"
       type="pie"
@@ -15,11 +16,22 @@
     >
       Back
     </button>
-  </div>
+  </div> -->
+
+<div style="width: 500px">
+  
+    <BarChart/>
+</div>
+
 </template>
 
 <script>
+import BarChart from './BarChart.vue'
+
+
+
 export default {
+  components: { BarChart },
   data() {
     return {
       //variable to track drill state.  -1 for no drill, otherwise it's set to the index of the drilled object
