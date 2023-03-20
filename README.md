@@ -1,6 +1,8 @@
 # vue3-apexchart-drill
 
-This template should help get you started developing with Vue 3 in Vite.
+See the demo [Here](https://johndeboer.github.io/vue3-apexchart-drill/)
+
+Drilling up and down in this chart works, but ApexCharts throws a "t3.parentNode is null" error on state changes and I haven't found a method of swapping the chart label and data values that avoids it.
 
 ## Recommended IDE Setup
 
