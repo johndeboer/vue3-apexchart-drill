@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       //variable to track drill state.  -1 for no drill, otherwise it's set to the index of the drilled object
-      drill: 1,
+      drill: -1,
       chartSeries: [],
       chartOptions: {},
 
@@ -65,16 +65,14 @@ export default {
       if (this.drill === -1) {
         return this.summaryLabels;
       } else {
-        return this.detailLabelsA;
-        // return this.detailLabels[this.drill];
+        return this.detailLabels[this.drill];
       }
     },
     setChartSeries() {
       if (this.drill === -1) {
         return this.summarySeries;
       } else {
-        return this.detailSeriesA;
-        // return this.detailSeries[this.drill];
+        return this.detailSeries[this.drill];
       }
     },
   },
